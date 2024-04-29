@@ -1,0 +1,32 @@
+{
+  "foods": [
+    {
+      "id": "1",
+      "name": "Chicken Pizza",
+      "price": "5.99",
+      "desc": "A Chicken lovers delight with 4 differnet chicken toppings for a flavourful and meaty bite",
+      "image": "https://images.unsplash.com/photo-1566222496324-7d04b48d2585?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "2",
+      "name": "Double Patty Burger",
+      "price": "5.99",
+      "desc": "A Chicken lovers delight with double meat and extra cheese for a flavourful and meaty bite",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "3",
+      "name": "Beef Pizza",
+      "price": "5.99",
+      "desc": "A Beef lovers delight with beef toppings and extra cheese for a flavourful and meaty bite",
+      "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "b77ea3eb-efb9-453a-b02e-3e44397454f5",
+      "name": "beef steak",
+      "price": "123",
+      "desc": "neww",
+      "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ]
+}
