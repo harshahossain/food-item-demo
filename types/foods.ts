@@ -1,7 +1,7 @@
 export interface IFood {
   id: string;
   name: string;
-  price: number;
+  price: string;
   desc: string;
   image: string;
 }

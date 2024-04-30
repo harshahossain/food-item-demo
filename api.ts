@@ -19,3 +19,21 @@ export const addFood = async (food: [IFood]): Promise<IFood> => {
   const newFood = await res.json();
   return newFood;
 };
+
+export const editFood = async (food: [IFood]): Promise<IFood> => {
+  const res = await fetch(`${baseUrl}/foods/${food.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(food),
+  });
+  const updatedTodo = await res.json();
+  return updatedTodo;
+};
+
+export const deleteFood = async (id: string): Promise<void> => {
+  await fetch(`${baseUrl}/foods/${id}`, {
+    method: "DELETE",
+  });
+};

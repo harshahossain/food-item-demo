@@ -92,8 +92,8 @@ export default function AddItem() {
               />
             </div>
 
-            <div>
-              <button type="submit" className="btn">
+            <div className="my-3">
+              <button type="submit" className="btn bg-slate-500 text-blue-900">
                 Submit
               </button>
             </div>
