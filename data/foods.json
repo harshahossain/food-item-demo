@@ -34,13 +34,6 @@
       "price": "123",
       "desc": "nodesc . test",
       "image": "noimage"
-    },
-    {
-      "id": "2d5e0fcd-6d12-4acb-865e-7742ec91253c",
-      "name": "TEST 2",
-      "price": "TEST 2",
-      "desc": "TEST 2",
-      "image": "TEST 2"
     }
   ]
 }

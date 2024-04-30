@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 import { useRouter } from "next/navigation";
 // import { CiEdit } from "react-icons/ci";
 import Modal from "./Modal";
-import { editFood } from "../../../api";
+import { deleteFood, editFood } from "../../../api";
 
 interface FoodProps {
   food: IFood;
@@ -44,6 +44,14 @@ const FoodItem: React.FC<FoodProps> = ({ food }) => {
     setOpenModalEdit(false);
     router.refresh();
   };
+
+  const handleDeleteFood = async (id: string) => {
+    await deleteFood(id);
+    setOpenModalDelete(false);
+    router.refresh();
+  };
+
+  //
   return (
     <div>
       <Card
@@ -139,13 +147,31 @@ const FoodItem: React.FC<FoodProps> = ({ food }) => {
               </div>
             </form>
           </Modal>
-          <Button size="small" className="text-red-800">
+          <Button
+            size="small"
+            className="text-red-800"
+            onClick={() => setOpenModalDelete(true)}
+          >
             Delete
           </Button>
           <Modal modalOpen={openModalDelete} setModalOpen={setOpenModalDelete}>
             <h3 className="font-bold text-lg text-red-600">
               Are you sure, you want to delete this Food Item?
             </h3>
+            <div className="modal-action">
+              <button
+                onClick={() => handleDeleteFood(food.id)}
+                className="btn text-red-600  bg-gray-600"
+              >
+                Yes
+              </button>
+              <button
+                onClick={() => setOpenModalDelete(false)}
+                className="btn text-green-600 bg-gray-600"
+              >
+                No
+              </button>
+            </div>
           </Modal>
         </CardActions>
       </Card>
