@@ -18,7 +18,7 @@ const FoodItem: React.FC<FoodProps> = ({ food }) => {
       <Card
         key={food.id}
         sx={{ maxWidth: 345 }}
-        className="p-2 m-1 bg-gradient-to-b from-yellow-500 to-red-600"
+        className="p-2 m-1 bg-gradient-to-b from-yellow-300 to-red-400"
       >
         <CardMedia sx={{ height: 140 }} image={food.image} title={food.name} />
         <CardContent>
@@ -31,8 +31,12 @@ const FoodItem: React.FC<FoodProps> = ({ food }) => {
           <div className="text-center font-bold">{food.price}$</div>
         </CardContent>
         <CardActions>
-          <Button size="small">Share</Button>
-          <Button size="small">Learn More</Button>
+          <Button size="small" className="text-green-800">
+            Edit
+          </Button>
+          <Button size="small" className="text-red-800">
+            Delete
+          </Button>
         </CardActions>
       </Card>
     </div>
