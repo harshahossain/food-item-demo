@@ -39,7 +39,7 @@ export default function AddItem() {
       <Button
         onClick={() => setModalOpen(true)}
         variant="contained"
-        className="btn btn-primary w-full"
+        className="btn btn-primary  m-2"
       >
         Add a new Food item <AiOutlinePlus className="ml-2" size={18} />
       </Button>

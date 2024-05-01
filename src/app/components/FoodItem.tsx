@@ -50,11 +50,11 @@ const FoodItem: React.FC<FoodProps> = ({ food }) => {
 
   //
   return (
-    <div>
+    <div className="p-2 m-1">
       <Card
         key={food.id}
-        sx={{ maxWidth: 345 }}
-        className="p-2 m-1 bg-gradient-to-b from-yellow-300 to-red-400"
+        sx={{ width: 305, height: 345 }}
+        className="bg-gradient-to-b from-yellow-300 to-red-400"
       >
         <CardMedia sx={{ height: 140 }} image={food.image} title={food.name} />
         <CardContent>
