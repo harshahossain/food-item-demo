@@ -31,7 +31,7 @@ export default function AddItem() {
     setNewFoodName("");
     setNewFoodImage("");
     setModalOpen(false);
-    router.refresh();
+    // router.refresh();
   };
 
   return (

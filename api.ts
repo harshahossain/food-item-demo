@@ -20,7 +20,7 @@ export const addFood = async (food: [IFood]): Promise<IFood> => {
   return newFood;
 };
 
-export const editFood = async (food: [IFood]): Promise<IFood> => {
+export const editFood = async (food: IFood): Promise<IFood> => {
   const res = await fetch(`${baseUrl}/foods/${food.id}`, {
     method: "PUT",
     headers: {

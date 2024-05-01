@@ -33,7 +33,14 @@
       "name": "bg",
       "price": "123",
       "desc": "nodesc . test",
-      "image": "noimage"
+      "image": "https://plus.unsplash.com/premium_photo-1675621475704-0df9d884f637?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+    },
+    {
+      "id": "c3db23bd-0b42-44a5-a056-fc044ae2d936",
+      "name": "asd",
+      "price": "asd",
+      "desc": "asd",
+      "image": "asd"
     }
   ]
 }
