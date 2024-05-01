@@ -24,23 +24,9 @@
     {
       "id": "b77ea3eb-efb9-453a-b02e-3e44397454f5",
       "name": "beef steak",
-      "price": "123",
+      "price": "120.99",
       "desc": "neww",
       "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      "id": "fd6dcbfe-ea29-42eb-b0e6-3a5ebed468ff",
-      "name": "bg",
-      "price": "123",
-      "desc": "nodesc . test",
-      "image": "https://plus.unsplash.com/premium_photo-1675621475704-0df9d884f637?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
-    },
-    {
-      "id": "c3db23bd-0b42-44a5-a056-fc044ae2d936",
-      "name": "asd",
-      "price": "asd",
-      "desc": "asd",
-      "image": "asd"
     }
   ]
 }

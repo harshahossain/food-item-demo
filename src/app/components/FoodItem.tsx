@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { useRouter } from "next/navigation";
+
 // import { CiEdit } from "react-icons/ci";
 import Modal from "./Modal";
 import { deleteFood, editFood } from "../../../api";
@@ -17,7 +17,6 @@ interface FoodProps {
 }
 
 const FoodItem: React.FC<FoodProps> = ({ food }) => {
-  const router = useRouter();
   // console.log(food.price);
   const [openModalEdit, setOpenModalEdit] = useState<boolean>(false);
   const [openModalDelete, setOpenModalDelete] = useState<boolean>(false);
@@ -42,13 +41,11 @@ const FoodItem: React.FC<FoodProps> = ({ food }) => {
     setImageToEdit("");
     setDescToEdit("");
     setOpenModalEdit(false);
-    router.refresh();
   };
 
   const handleDeleteFood = async (id: string) => {
     await deleteFood(id);
     setOpenModalDelete(false);
-    router.refresh();
   };
 
   //
